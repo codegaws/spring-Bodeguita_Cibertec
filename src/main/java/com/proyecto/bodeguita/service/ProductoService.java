@@ -1,6 +1,7 @@
 package com.proyecto.bodeguita.service;
 
 import java.util.Optional;
+import java.util.List;
 
 import com.proyecto.bodeguita.model.Producto;
 
@@ -9,5 +10,6 @@ public interface ProductoService {
 	public Optional<Producto> get(Integer id);
 	public void update(Producto producto);
 	public void delete(Integer id);
+	public List<Producto>findAll();
 	
 }
